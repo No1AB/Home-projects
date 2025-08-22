@@ -27,7 +27,8 @@ public class Recipe {
         return this.ingredients;
     }
 
-    public void setIngredients(String[] ingredients) { // Setter for ingredients array...work in progress
+    public void setIngredients(String[] ingredients) { // Setter for ingredients array...work in
+                                                       // progress
         this.ingredients = new String[10];
     }
 
@@ -41,11 +42,8 @@ public class Recipe {
 
     @Override
     public String toString() {
-        return "{" +
-            " name='" + getName() + "'" +
-            ", ingredients='" + getIngredients() + "'" +
-            ", equipment='" + getEquipment() + "'" +
-            "}";
+        return "{" + " name='" + getName() + "'" + ", ingredients='" + getIngredients() + "'"
+                + ", equipment='" + getEquipment() + "'" + "}";
     }
 
 
