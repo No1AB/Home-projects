@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class RecipeBook {
 
     private Recipe[] recipes;
@@ -13,6 +15,11 @@ public class RecipeBook {
         this.recipes[index] = new Recipe(recipe);
     }
 
+
+    public String toString() {
+        return
+             "\t**- Recipe: " + Arrays.toString(this.recipes);
+    }
 
 
 }

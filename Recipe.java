@@ -1,11 +1,11 @@
 import java.util.Arrays;
 
 public class Recipe {
-    String name;
-    String[] ingredients;
-    String[] equipment;
+    private String name;
+    private Ingredient[] ingredients;
+    private String[] equipment;
 
-    public Recipe(String name, String[] ingredients, String[] equipment) { // Recipe constructor
+    public Recipe(String name, Ingredient[] ingredients, String[] equipment) { // Recipe constructor
         this.name = name;
         this.ingredients = ingredients;
         this.equipment = equipment;
@@ -25,13 +25,13 @@ public class Recipe {
         this.name = name;
     }
 
-    public String[] getIngredients() {
+    public Ingredient[] getIngredients() {
         return this.ingredients;
     }
 
-    public void setIngredients(String[] ingredients) { // Setter for ingredients array...work in
+    public void setIngredients(Ingredient[] ingredients) { // Setter for ingredients array...work in
                                                        // progress
-        this.ingredients = new String[10];
+        this.ingredients = new Ingredient[10];
     }
 
     public String[] getEquipment() {
