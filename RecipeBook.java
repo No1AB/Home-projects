@@ -3,7 +3,7 @@ public class RecipeBook {
     private Recipe[] recipes;
 
     public RecipeBook() {
-        this.recipes = new Recipe[10];
+        this.recipes = new Recipe[15];
     }
 
     public Recipe getRecipe(int index) {

@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Recipe {
     String name;
     String[] ingredients;
@@ -40,11 +42,15 @@ public class Recipe {
         this.equipment = equipment;
     }
 
-    @Override
+
     public String toString() {
-        return "{" + " name='" + getName() + "'" + ", ingredients='" + getIngredients() + "'"
-                + ", equipment='" + getEquipment() + "'" + "}";
+        return
+            "\t- Recipe: " + getName() + "\n" +
+            "\t- Ingredients: " + Arrays.toString(ingredients) + "\n" +
+            "\t- Equipment: " + Arrays.toString(equipment);
+            
     }
+
 
 
 
